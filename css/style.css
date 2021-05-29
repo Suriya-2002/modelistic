@@ -16,6 +16,122 @@ body {
   font-weight: 400;
   line-height: 1.7; }
 
+.heading-primary {
+  color: #fff;
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 8rem; }
+
+.model-card {
+  border-radius: 0.4rem;
+  box-shadow: 0 2rem 4rem #000;
+  width: 28rem;
+  height: 28rem;
+  margin-bottom: 10rem;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  perspective: 100rem; }
+  .model-card:before {
+    content: '';
+    width: 28rem;
+    height: 28rem;
+    position: absolute;
+    top: -1.6rem;
+    left: -1.6rem;
+    border: 0.2rem dashed #fff;
+    border-radius: 0.4rem;
+    background-image: repeating-linear-gradient(-24deg, transparent, transparent 0.4rem, rgba(255, 255, 255, 0.5) 0, rgba(255, 255, 255, 0.5) 0.5rem);
+    z-index: -1; }
+  .model-card__link {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 0.2rem solid #fff;
+    border-radius: 0.4rem;
+    width: 100%;
+    height: 100%;
+    display: block; }
+    .model-card__link:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 2.4rem;
+      width: 1.6rem;
+      height: 1.6rem;
+      margin-top: -0.8rem;
+      background-color: #fff;
+      opacity: 0;
+      clip-path: polygon(75% 0, 100% 50%, 75% 100%, 0 100%, 25% 50%, 0 0);
+      transition: opacity 0.5s ease-in, transform 0.3s ease-in-out 0ms; }
+  .model-card__content {
+    background-color: #fff;
+    color: #000;
+    border: 0.2rem solid #fff;
+    border-radius: 0.4rem;
+    padding: 1.6rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column; }
+    .model-card__content--left {
+      clip-path: polygon(0 0, 51% 0, 51% 100%, 0 100%); }
+    .model-card__content--right {
+      clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+      transition: transform 0.5s ease-in-out, background-color 0.4s ease-in-out; }
+  .model-card__title {
+    font-size: 3.2rem;
+    font-weight: 700; }
+  .model-card__footer {
+    margin-top: auto;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    display: flex;
+    justify-content: space-between; }
+  .model-card__footer-content {
+    font-weight: 700;
+    transition: all 0.4s ease-in-out; }
+  .model-card__button, .model-card__button:link, .model-card__button:visited {
+    color: #000;
+    background-color: #fff;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 0.3rem;
+    width: 100%;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    display: inline-block; }
+    .model-card__button:hover, .model-card__button:link:hover, .model-card__button:visited:hover {
+      transform: translateY(-0.4rem); }
+    .model-card__button:active, .model-card__button:link:active, .model-card__button:visited:active {
+      transform: translateY(-0.1rem); }
+  .model-card__link:hover .model-card__footer-content {
+    transform: translateX(1rem); }
+  .model-card__link:hover .model-card__content--right {
+    background-color: #f5f5f5;
+    transform: rotateY(-50deg); }
+  .model-card__link:hover:after {
+    opacity: 1;
+    transform: translateX(1.2rem);
+    transition: opacity 0.5s ease-in, transform 0.3s ease-in-out 0.25s; }
+
+.models {
+  background-image: linear-gradient(#000, rgba(0, 0, 0, 0.6)), url("./../assets/images/background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 5rem 4rem;
+  min-height: 120vh; }
+
+.model-cards {
+  margin: 1.6rem auto 4rem;
+  display: grid;
+  grid-row-gap: 6.4rem;
+  grid-column-gap: 4.8rem;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  justify-items: center; }
+
 /* =================================================================== 
  *
  *  Khronos v1.0 Base Stylesheet

@@ -1,0 +1,18 @@
+.models {
+    background-image: linear-gradient($color-black, rgba($color-black, 0.6)),
+        url('./../assets/images/background.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5rem 4rem;
+    min-height: 120vh;
+}
+
+.model-cards {
+    margin: 1.6rem auto 4rem;
+    display: grid;
+    grid-row-gap: 6.4rem;
+    grid-column-gap: 4.8rem;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    justify-items: center;
+}
