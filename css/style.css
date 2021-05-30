@@ -22,6 +22,9 @@ body {
   text-align: center;
   margin-bottom: 8rem; }
 
+.margin-bottom--big {
+  margin-bottom: 10rem; }
+
 .model-card {
   border-radius: 0.4rem;
   box-shadow: 0 2rem 4rem #000;
@@ -146,7 +149,7 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 5rem 4rem;
+  padding: 12rem 4rem 20rem 4rem;
   min-height: 120vh; }
 
 .model-cards {
