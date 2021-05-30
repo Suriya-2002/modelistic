@@ -1,0 +1,40 @@
+.footer {
+    background-color: $color-black;
+    padding-bottom: 3rem;
+    position: relative;
+
+    &__overlay {
+        background-image: linear-gradient(transparent, $color-black 70%);
+        height: 20rem;
+        width: 100%;
+        position: absolute;
+        pointer-events: none;
+        transform: translateY(-100%);
+    }
+
+    &__logo {
+        width: 8rem;
+        margin-bottom: 2rem;
+    }
+
+    &__title {
+        color: $color-white;
+        margin-bottom: 6rem;
+    }
+
+    &__text {
+        color: $color-grey-dark-1;
+    }
+
+    &__link,
+    &__link:link,
+    &__link:visited {
+        color: $color-grey-dark-2;
+        font-weight: 800;
+    }
+
+    &__link:hover,
+    &__link:focus {
+        color: $color-white;
+    }
+}

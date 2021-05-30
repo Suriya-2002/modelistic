@@ -116,6 +116,31 @@ body {
     transform: translateX(1.2rem);
     transition: opacity 0.5s ease-in, transform 0.3s ease-in-out 0.25s; }
 
+.footer {
+  background-color: #000;
+  padding-bottom: 3rem;
+  position: relative; }
+  .footer__overlay {
+    background-image: linear-gradient(transparent, #000 70%);
+    height: 20rem;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    transform: translateY(-100%); }
+  .footer__logo {
+    width: 8rem;
+    margin-bottom: 2rem; }
+  .footer__title {
+    color: #fff;
+    margin-bottom: 6rem; }
+  .footer__text {
+    color: #666; }
+  .footer__link, .footer__link:link, .footer__link:visited {
+    color: #888;
+    font-weight: 800; }
+  .footer__link:hover, .footer__link:focus {
+    color: #fff; }
+
 .models {
   background-image: linear-gradient(#000, rgba(0, 0, 0, 0.6)), url("./../assets/images/background.jpg");
   background-position: center;
