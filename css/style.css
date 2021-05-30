@@ -25,6 +25,58 @@ body {
 .margin-bottom--big {
   margin-bottom: 10rem; }
 
+.dropdown {
+  color: #000;
+  background-color: #fff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: capitalize;
+  width: 30rem;
+  height: 6rem;
+  border-radius: 0.3rem;
+  position: relative;
+  cursor: pointer; }
+  .dropdown__display {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; }
+    .dropdown__display:hover .dropdown__selected-arrow {
+      transform: scale(1.2); }
+    .dropdown__display:focus .dropdown__selected-arrow {
+      transform: translateY(20%); }
+    .dropdown__display:focus ~ .dropdown__list {
+      opacity: 1;
+      z-index: 0;
+      transform: translateY(0);
+      transition: opacity 0.5s 0.1s, transform 0.5s 0.1s, z-index 0s; }
+  .dropdown__selected-arrow {
+    color: #000;
+    font-size: 2.5rem;
+    font-weight: 900;
+    position: absolute;
+    top: 20%;
+    right: 3rem;
+    transition: all 0.3s ease-in-out; }
+  .dropdown__list {
+    background-color: #fff;
+    width: 100%;
+    border-radius: 0.3rem;
+    margin: 0;
+    position: absolute;
+    top: 120%;
+    opacity: 0;
+    z-index: -1;
+    transform: translateY(1.5rem);
+    transition: opacity 0.5s, transform 0.5s, z-index 0s 0.8s; }
+  .dropdown__option {
+    padding: 1rem; }
+    .dropdown__option:hover {
+      background-color: #aaa; }
+
 .model-card {
   border-radius: 0.4rem;
   box-shadow: 0 2rem 4rem #000;
@@ -118,6 +170,32 @@ body {
     opacity: 1;
     transform: translateX(1.2rem);
     transition: opacity 0.5s ease-in, transform 0.3s ease-in-out 0.25s; }
+
+.data-preprocessing {
+  color: #fff;
+  background-color: #000;
+  padding: 5rem 2rem; }
+  .data-preprocessing__contents {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+  .data-preprocessing__button {
+    color: #000;
+    background-color: #fff;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: normal;
+    text-transform: capitalize;
+    width: 30rem;
+    height: 6rem;
+    border-radius: 0.3rem; }
+    .data-preprocessing__button:hover {
+      background-color: #fff;
+      transform: translateY(-0.4rem); }
+    .data-preprocessing__button:focus, .data-preprocessing__button:active {
+      background-color: #fff;
+      transform: translateY(-0.1rem); }
 
 .footer {
   background-color: #000;
