@@ -1904,7 +1904,7 @@ body {
     .dropdown__display:hover .dropdown__selected-arrow {
       transform: scale(1.2); }
     .dropdown__display:focus .dropdown__selected-arrow {
-      transform: translateY(20%); }
+      transform: translateY(10%); }
     .dropdown__display:focus ~ .dropdown__list {
       opacity: 1;
       z-index: 0;
@@ -1915,7 +1915,7 @@ body {
     font-size: 2.5rem;
     font-weight: 900;
     position: absolute;
-    top: 20%;
+    top: 10%;
     right: 3rem;
     transition: all 0.3s ease-in-out; }
   .dropdown__list {
@@ -1930,7 +1930,8 @@ body {
     transform: translateY(1.5rem);
     transition: opacity 0.5s, transform 0.5s, z-index 0s 0.8s; }
   .dropdown__option {
-    padding: 1rem; }
+    padding: 1rem;
+    border-radius: inherit; }
     .dropdown__option:hover {
       background-color: #aaa; }
 
