@@ -3,6 +3,9 @@
 @import './abstracts/placeholders';
 @import './abstracts/variables';
 
+@import './vendors/styleshout-reset';
+@import './vendors/styleshout-main';
+
 @import './base/animations';
 @import './base/base';
 @import './base/typography';
@@ -18,6 +21,3 @@
 // @import './pages';
 
 // @import './themes';
-
-@import './vendors/styleshout-reset';
-@import './vendors/styleshout-main';
