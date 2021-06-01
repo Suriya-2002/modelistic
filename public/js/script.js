@@ -1,9 +1,12 @@
 const popUp = document.querySelector('.pop-up');
 
-document.querySelector('.dropdown__list').addEventListener('click', event => {
-    if (event.target.classList.contains('dropdown__option')) {
-        document.querySelector('.dropdown__selected-option').innerHTML = event.target.innerHTML;
-    }
+document.querySelectorAll('.dropdown__list').forEach(dropdownList => {
+    dropdownList.addEventListener('click', event => {
+        if (event.target.classList.contains('dropdown__option')) {
+            dropdownList.closest('.dropdown').querySelector('.dropdown__selected-option').innerHTML =
+                event.target.innerHTML;
+        }
+    });
 });
 
 document.querySelector('.model-cards').addEventListener('click', event => {
