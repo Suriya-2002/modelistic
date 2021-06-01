@@ -2050,8 +2050,11 @@ body {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 3; }
+  opacity: 0;
+  pointer-events: none;
+  z-index: 3;
+  transform: translate(-50%, -30%);
+  transition: all 0.5s ease-in-out; }
 
 .pop-up__main-contents {
   display: flex;
@@ -2065,8 +2068,11 @@ body {
   position: fixed;
   top: 50%;
   left: 50%;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 2;
   transform: translate(-50%, -50%);
-  z-index: 2; }
+  transition: all 0.5s ease-in-out; }
 
 .pop-up__title {
   color: #000; }
@@ -2089,6 +2095,15 @@ body {
     transform: translateY(-0.4rem); }
   .pop-up__button:active, .pop-up__button:link:active, .pop-up__button:visited:active {
     transform: translateY(-0.1rem); }
+
+.pop-up--active .pop-up__overlay {
+  opacity: 1;
+  pointer-events: all; }
+
+.pop-up--active .pop-up__contents {
+  opacity: 1;
+  pointer-events: all;
+  transform: translate(-50%, -50%); }
 
 .data-preprocessing {
   color: #fff;
