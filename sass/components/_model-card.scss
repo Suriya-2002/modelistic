@@ -93,28 +93,6 @@
         transition: all 0.4s ease-in-out;
     }
 
-    &__button,
-    &__button:link,
-    &__button:visited {
-        color: $color-black;
-        background-color: $color-white;
-        font-weight: 700;
-        text-align: center;
-        border-radius: 0.3rem;
-        width: 100%;
-        margin-top: 2rem;
-        padding: 1rem 2rem;
-        display: inline-block;
-
-        &:hover {
-            transform: translateY(-0.4rem);
-        }
-
-        &:active {
-            transform: translateY(-0.1rem);
-        }
-    }
-
     &__link:hover &__footer-content {
         transform: translateX(1rem);
     }

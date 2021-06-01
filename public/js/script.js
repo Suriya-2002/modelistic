@@ -7,7 +7,7 @@ document.querySelector('.dropdown__list').addEventListener('click', event => {
 });
 
 document.querySelector('.model-cards').addEventListener('click', event => {
-    if (event.target.classList.contains('model-card__button')) {
+    if (event.target.classList.contains('button--model-card')) {
         popUp.classList.add('pop-up--active');
     }
 });
@@ -16,6 +16,6 @@ document.querySelector('.pop-up__overlay').addEventListener('click', () => {
     popUp.classList.remove('pop-up--active');
 });
 
-document.querySelector('.pop-up__button').addEventListener('click', () => {
+document.querySelector('.button--pop-up').addEventListener('click', () => {
     popUp.classList.remove('pop-up--active');
 });

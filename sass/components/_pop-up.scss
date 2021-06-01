@@ -39,32 +39,6 @@
         color: $color-black;
     }
 
-    &__button,
-    &__button:link,
-    &__button:visited {
-        color: $color-white;
-        background-color: $color-black;
-        font-size: 1.6rem;
-        font-weight: 700;
-        text-align: center;
-        letter-spacing: normal;
-        text-transform: capitalize;
-        width: 30rem;
-        height: 6rem;
-        border-radius: 0.3rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        &:hover {
-            transform: translateY(-0.4rem);
-        }
-
-        &:active {
-            transform: translateY(-0.1rem);
-        }
-    }
-
     &--active {
         .pop-up__overlay {
             opacity: 1;
