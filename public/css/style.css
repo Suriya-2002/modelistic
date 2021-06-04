@@ -1237,6 +1237,29 @@ body {
   .footer__link:hover, .footer__link:focus {
     color: #fff; }
 
+.model-details {
+  background: linear-gradient(#000, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("./../assets/images/stone-background.jpg");
+  background-size: contain;
+  background-repeat: repeat-y;
+  padding: 5rem 15rem 20rem; }
+  .model-details__abstract, .model-details__code-working, .model-details__dataset-description {
+    margin-bottom: 15rem; }
+    .model-details__abstract:hover .model-details__title, .model-details__code-working:hover .model-details__title, .model-details__dataset-description:hover .model-details__title {
+      text-shadow: 0.5rem 1rem 2rem #000;
+      transform: skewY(2deg) skewX(15deg) scale(1.2); }
+  .model-details__title {
+    color: #fff;
+    font-size: 5rem;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2.5;
+    transition: all 0.3s ease-in-out; }
+  .model-details__text {
+    color: #aaa;
+    font-size: 1.8rem; }
+
 .models {
   background-image: linear-gradient(#000, rgba(0, 0, 0, 0.6)), url("./../assets/images/background.jpg");
   background-position: center;

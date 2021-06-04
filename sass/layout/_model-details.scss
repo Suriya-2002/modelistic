@@ -1,0 +1,34 @@
+.model-details {
+    background: linear-gradient($color-black, rgba($color-black, 0.2), rgba($color-black, 0.6)),
+        url('./../assets/images/stone-background.jpg');
+    background-size: contain;
+    background-repeat: repeat-y;
+    padding: 5rem 15rem 20rem;
+
+    &__abstract,
+    &__code-working,
+    &__dataset-description {
+        margin-bottom: 15rem;
+
+        &:hover .model-details__title {
+            text-shadow: 0.5rem 1rem 2rem $color-black;
+            transform: skewY(2deg) skewX(15deg) scale(1.2);
+        }
+    }
+
+    &__title {
+        color: $color-white;
+        font-size: 5rem;
+        margin-top: 5rem;
+        margin-bottom: 3rem;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 2.5;
+        transition: all 0.3s ease-in-out;
+    }
+
+    &__text {
+        color: $color-grey-light-2;
+        font-size: 1.8rem;
+    }
+}
