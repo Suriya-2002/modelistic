@@ -7,6 +7,10 @@ app.set('view engine', 'ejs');
 
 app.use(express.static('public'));
 
+app.use('/model-details', (req, res, next) => {
+    res.render('index');
+});
+
 app.use('/', (req, res, next) => {
     res.render('index');
 });
