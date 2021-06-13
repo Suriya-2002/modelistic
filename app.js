@@ -1,5 +1,7 @@
 const express = require('express');
 
+const modelRoutes = require('./routes/model');
+
 const app = express();
 
 app.set('views', 'views');
@@ -7,13 +9,7 @@ app.set('view engine', 'ejs');
 
 app.use(express.static('public'));
 
-app.use('/model-details', (req, res, next) => {
-    res.render('index');
-});
-
-app.use('/', (req, res, next) => {
-    res.render('index');
-});
+app.use('/', modelRoutes);
 
 app.listen(2002, 'localhost');
 
